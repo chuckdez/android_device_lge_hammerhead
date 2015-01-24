@@ -14,6 +14,23 @@
 # limitations under the License.
 #
 
+# Custom Edits Begin
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_KRAIT_BIONIC_PLDOFFS := 10
+TARGET_KRAIT_BIONIC_PLDSIZE := 64
+TARGET_KRAIT_BIONIC_PLDTHRESH := 64
+TARGET_KRAIT_BIONIC_BBTHRESH := 64
+
+
+TARGET_GLOBAL_CFLAGS += \
+                        --param l0-cache-size=4\
+                        --param l1-cache-line-size=128\
+                        --param l1-cache-size=16\
+                        --param l2-cache-size= 2048\
+
+# Custom Edits End
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
