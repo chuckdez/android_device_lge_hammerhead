@@ -24,7 +24,6 @@ TARGET_KRAIT_BIONIC_BBTHRESH := 64
 
 
 TARGET_GLOBAL_CFLAGS += \
-                        --param l0-cache-size=4\
                         --param l1-cache-line-size=128\
                         --param l1-cache-size=16\
                         --param l2-cache-size= 2048\
