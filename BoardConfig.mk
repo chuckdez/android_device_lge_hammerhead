@@ -28,6 +28,8 @@ TARGET_GLOBAL_CFLAGS += \
                         --param l1-cache-line-size=128\
                         --param l1-cache-size=16\
                         --param l2-cache-size= 2048\
+WITH_JIT_TUNING := true
+TARGET_CPU_SMP := true
 
 # Custom Edits End
 
