@@ -38,7 +38,7 @@ TARGET_USES_QCOM_BSP := true
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Custom Edits End
-
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_ABI := armeabi-v7a
