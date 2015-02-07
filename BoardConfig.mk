@@ -29,15 +29,23 @@ TARGET_GLOBAL_CFLAGS += \
                         --param l1-cache-size=16\
                         --param l2-cache-size= 2048\
 WITH_JIT_TUNING := true
-TARGET_CPU_SMP := true
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+TARGET_USES_QCOM_BSP := true
+BOARD_USES_QC_TIME_SERVICES := true
 
 # Custom Edits End
 
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT_CPU := cortex-a9
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
+TARGET_CPU_SMP := true
 
 TARGET_NO_BOOTLOADER := true
 
