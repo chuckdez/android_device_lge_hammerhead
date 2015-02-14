@@ -15,7 +15,7 @@
 #
 
 # Custom Edits Begin
-#TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 TARGET_USE_KRAIT_PLD_SET := true
 KRAIT_NEON_OPTIMIZATION := true
 TARGET_KRAIT_BIONIC_PLDOFFS := 10
@@ -29,7 +29,7 @@ TARGET_GLOBAL_CFLAGS += \
                         --param l1-cache-size=16\
                         --param l2-cache-size= 2048\
 WITH_JIT_TUNING := true
-#TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # QCOM hardware
  TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
