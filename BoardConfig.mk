@@ -29,9 +29,10 @@ TARGET_GLOBAL_CFLAGS += \
                         --param l1-cache-size=16\
                         --param l2-cache-size= 2048\
 WITH_JIT_TUNING := true
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+#TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # QCOM hardware
+ TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
  TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
  TARGET_USES_QCOM_BSP := true
  BOARD_USES_QC_TIME_SERVICES := true
