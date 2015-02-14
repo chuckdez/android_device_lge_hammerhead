@@ -32,7 +32,6 @@ WITH_JIT_TUNING := true
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # QCOM hardware
-TARGET_USES_QCOM_BSP := true
 
 
 # Custom Edits End
