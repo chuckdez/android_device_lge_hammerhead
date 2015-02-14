@@ -32,7 +32,9 @@ WITH_JIT_TUNING := true
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # QCOM hardware
-
+ TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+ TARGET_USES_QCOM_BSP := true
+ BOARD_USES_QC_TIME_SERVICES := true
 
 # Custom Edits End
 TARGET_ARCH := arm
